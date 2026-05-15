@@ -1,26 +1,17 @@
 # ZoZe Finance
 
-**SaaS Financeiro Premium Completo**
+SaaS Financeiro Premium completo
 
-Desenvolvido por Pedro Mustafe
+**Desenvolvido por Pedro Mustafe**
 
-Sistema real, funcional, escalável e pronto para produção.
+Tecnologias: Next.js 15 + Express + Prisma + Supabase (PostgreSQL)
 
-## Tecnologias
-- Frontend: Next.js 15 + Tailwind + Framer Motion + Recharts
-- Backend: Node.js + Express + Prisma
-- DB: PostgreSQL
-- Auth: JWT + RBAC
-- Pagamentos: Stripe + Mercado Pago
+## Como rodar com Supabase
 
-## Como rodar localmente
+1. Copie `.env.example` para `.env` e preencha as credenciais do seu Supabase
+2. `cd backend && npm install && npx prisma generate && npx prisma db push`
+3. `npm run dev` no backend e frontend
 
-1. Clone o repo
-2. Copie `.env.example` → `.env`
-3. Configure o banco PostgreSQL
-4. `cd backend && npm install && npx prisma migrate dev && npx prisma db seed`
-5. `cd frontend && npm install && npm run dev`
-
-**Repositório pronto para deploy em Vercel + Railway!** 🚀
-
-Mais arquivos sendo adicionados agora.
+**Master Admin**
+Email: admin@zozefinance.com
+Senha: Admin@123

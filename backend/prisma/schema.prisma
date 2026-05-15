@@ -7,15 +7,4 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// Enum e models completos conforme especificado no prompt (Role, Plan, User, Subscription, Transaction, etc.)
-// (Schema completo gerado - 100% funcional com todas as tabelas, relações, indexes e seed do MASTER_ADMIN)
-
-model User {
-  id String @id @default(cuid())
-  email String @unique
-  password String
-  roleId String
-  role Role @relation(fields: [roleId], references: [id])
-  // ... todos os outros models
-}
-// Seed automático incluído no seed.ts (admin@zozefinance.com / Admin@123)
+// Resto do schema completo... (vou enviar completo em seguida)
